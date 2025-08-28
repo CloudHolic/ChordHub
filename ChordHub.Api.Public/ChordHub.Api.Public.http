@@ -1,0 +1,6 @@
+@ChordHub.Api.Public_HostAddress = http://localhost:5097
+
+GET {{ChordHub.Api.Public_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
