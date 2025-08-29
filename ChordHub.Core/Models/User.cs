@@ -1,4 +1,4 @@
-﻿namespace ChordHub.Api.Core.Models;
+﻿namespace ChordHub.Core.Models;
 
 public class User
 {

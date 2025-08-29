@@ -1,6 +1,6 @@
 ﻿using System.Security.Claims;
 
-using ChordHub.Api.Core.Models;
+using ChordHub.Core.Models;
 
 namespace ChordHub.Api.Shared.Services;
 

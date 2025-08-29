@@ -1,4 +1,4 @@
-﻿namespace ChordHub.Api.Core.Exceptions;
+﻿namespace ChordHub.Core.Exceptions;
 
 public class DomainException : Exception
 {

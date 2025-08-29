@@ -1,4 +1,4 @@
-﻿namespace ChordHub.Api.Core.Enums;
+﻿namespace ChordHub.Core.Enums;
 
 public enum ChordQuality
 {

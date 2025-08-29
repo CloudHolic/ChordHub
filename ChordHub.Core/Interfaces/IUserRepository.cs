@@ -1,6 +1,6 @@
-﻿using ChordHub.Api.Core.Models;
+﻿using ChordHub.Core.Models;
 
-namespace ChordHub.Api.Core.Interfaces;
+namespace ChordHub.Core.Interfaces;
 
 public interface IUserRepository
 {

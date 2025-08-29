@@ -2,8 +2,8 @@
 using System.Security.Claims;
 using System.Text;
 
-using ChordHub.Api.Core.Models;
 using ChordHub.Api.Shared.Authentication;
+using ChordHub.Core.Models;
 
 using Microsoft.IdentityModel.Tokens;
 

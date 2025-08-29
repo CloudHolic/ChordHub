@@ -1,8 +1,8 @@
 ﻿using System.Net;
 using System.Text.Json;
 
-using ChordHub.Api.Core.Exceptions;
 using ChordHub.Api.Shared.Models;
+using ChordHub.Core.Exceptions;
 
 using Microsoft.AspNetCore.Http;
 

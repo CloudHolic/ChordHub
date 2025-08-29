@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChordHub.Api.Internal", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChordHub.Api.Shared", "ChordHub.Api.Shared\ChordHub.Api.Shared.csproj", "{4F04D49A-4EBE-40C0-8DFD-6AE7C2CA2A69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChordHub.Core", "ChordHub.Core\ChordHub.Core.csproj", "{B365A0A4-948A-4496-98A2-E97E9DB496C0}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChordHub.Infrastructure", "ChordHub.Infrastructure\ChordHub.Infrastructure.csproj", "{258B05F2-4600-4347-99B8-1D68E4852FE2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChordHub.Service.Discord", "ChordHub.Service.Discord\ChordHub.Service.Discord.csproj", "{CF0D7848-7F9F-51FE-4B34-6457DA6198EE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChordHub.Api.Core", "ChordHub.Api.Core\ChordHub.Api.Core.csproj", "{B365A0A4-948A-4496-98A2-E97E9DB496C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,7 +38,11 @@ Global
 		{4F04D49A-4EBE-40C0-8DFD-6AE7C2CA2A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4F04D49A-4EBE-40C0-8DFD-6AE7C2CA2A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F04D49A-4EBE-40C0-8DFD-6AE7C2CA2A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F04D49A-4EBE-40C0-8DFD-6AE7C2CA2A69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F04D49A-4EBE-40C0-8DFD-6AE7C2CA2A69}.Release|Any CPU.Build.0 = Release|Any CPU		
+		{B365A0A4-948A-4496-98A2-E97E9DB496C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B365A0A4-948A-4496-98A2-E97E9DB496C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B365A0A4-948A-4496-98A2-E97E9DB496C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B365A0A4-948A-4496-98A2-E97E9DB496C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{258B05F2-4600-4347-99B8-1D68E4852FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{258B05F2-4600-4347-99B8-1D68E4852FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{258B05F2-4600-4347-99B8-1D68E4852FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,10 +51,6 @@ Global
 		{CF0D7848-7F9F-51FE-4B34-6457DA6198EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF0D7848-7F9F-51FE-4B34-6457DA6198EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF0D7848-7F9F-51FE-4B34-6457DA6198EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B365A0A4-948A-4496-98A2-E97E9DB496C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B365A0A4-948A-4496-98A2-E97E9DB496C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B365A0A4-948A-4496-98A2-E97E9DB496C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B365A0A4-948A-4496-98A2-E97E9DB496C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
