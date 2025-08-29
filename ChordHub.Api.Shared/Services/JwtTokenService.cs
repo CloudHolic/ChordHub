@@ -1,8 +1,10 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+
 using ChordHub.Api.Core.Models;
 using ChordHub.Api.Shared.Authentication;
+
 using Microsoft.IdentityModel.Tokens;
 
 namespace ChordHub.Api.Shared.Services;
@@ -47,7 +49,7 @@ public class JwtTokenService(JwtSettings jwtSettings) : IJwtTokenService
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey)),
             ValidateLifetime = false
         };
-        
+
         var tokenHandler = new JwtSecurityTokenHandler();
         var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out var securityToken);
 

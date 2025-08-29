@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+
 using ChordHub.Api.Core.Models;
 
 namespace ChordHub.Api.Shared.Services;

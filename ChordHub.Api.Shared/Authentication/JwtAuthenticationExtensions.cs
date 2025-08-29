@@ -1,4 +1,5 @@
 ﻿using System.Text;
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -48,7 +49,7 @@ public static class JwtAuthenticationExtensions
         services.AddAuthorizationBuilder()
             .AddPolicy("RequireUser", policy => policy.RequireAuthenticatedUser())
             .AddPolicy("RequireAdmin", policy => policy.RequireAuthenticatedUser().RequireRole("Admin"));
-        
+
         return services;
     }
 }

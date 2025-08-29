@@ -1,4 +1,5 @@
 ﻿using ChordHub.Api.Shared.Extensions;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 

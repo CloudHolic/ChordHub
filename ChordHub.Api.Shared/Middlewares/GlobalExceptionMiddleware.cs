@@ -1,8 +1,11 @@
 ﻿using System.Net;
 using System.Text.Json;
+
 using ChordHub.Api.Core.Exceptions;
 using ChordHub.Api.Shared.Models;
+
 using Microsoft.AspNetCore.Http;
+
 using Serilog;
 
 namespace ChordHub.Api.Shared.Middlewares;
@@ -39,7 +42,7 @@ public class GlobalExceptionMiddleware(RequestDelegate next)
 
         if (shouldLogAsError)
             _logger.Error(exception,
-                "Unhandled exception occurred. StatusCode: {StatusCode}, RequestPath: {RequestPath}", 
+                "Unhandled exception occurred. StatusCode: {StatusCode}, RequestPath: {RequestPath}",
                 statusCode, context.Request.Path);
         else
             _logger.Warning(exception,

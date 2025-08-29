@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
+
 using Microsoft.AspNetCore.Http;
+
 using Serilog;
 using Serilog.Context;
 using Serilog.Events;
@@ -14,9 +16,9 @@ public class RequestLoggingMiddleware(RequestDelegate next)
     {
         var stopWatch = Stopwatch.StartNew();
         var requestId = Guid.NewGuid().ToString();
-        
-        using(LogContext.PushProperty("RequestId", requestId))
-        using(LogContext.PushProperty("UserAgent", context.Request.Headers.UserAgent.ToString()))
+
+        using (LogContext.PushProperty("RequestId", requestId))
+        using (LogContext.PushProperty("UserAgent", context.Request.Headers.UserAgent.ToString()))
         using (LogContext.PushProperty("RemoteIP", context.Connection.RemoteIpAddress?.ToString()))
         {
             if (context.User?.Identity?.IsAuthenticated == true)
@@ -35,7 +37,7 @@ public class RequestLoggingMiddleware(RequestDelegate next)
     private async Task ProcessRequest(HttpContext context, Stopwatch stopwatch, string requestId)
     {
         var request = context.Request;
-        
+
         _logger.Information("HTTP {Method} {Path} started", request.Method, request.Path);
 
         try
@@ -52,12 +54,12 @@ public class RequestLoggingMiddleware(RequestDelegate next)
             stopwatch.Stop();
 
             var statusCode = context.Response.StatusCode;
-            var level = statusCode >= 500 
-                ? LogEventLevel.Error 
-                : statusCode >= 400 
-                    ? LogEventLevel.Warning 
+            var level = statusCode >= 500
+                ? LogEventLevel.Error
+                : statusCode >= 400
+                    ? LogEventLevel.Warning
                     : LogEventLevel.Information;
-            
+
             _logger.Write(level, "HTTP {Method} {Path} responded {StatusCode} in {ElapsedMs}ms",
                 request.Method, request.Path, statusCode, stopwatch.ElapsedMilliseconds);
         }

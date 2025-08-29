@@ -4,10 +4,12 @@ using ChordHub.Api.Shared.Hubs;
 using ChordHub.Api.Shared.Logging;
 using ChordHub.Api.Shared.Middlewares;
 using ChordHub.Api.Shared.Services;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
+
 using Serilog;
 
 namespace ChordHub.Api.Shared;
@@ -84,7 +86,7 @@ public static class DependencyInjection
         app.MapHealthChecks("/health");
 
         app.MapHub<AnalysisProgressHub>("/hubs/analysis");
-        
+
         return app;
     }
 }

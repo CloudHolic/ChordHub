@@ -1,4 +1,5 @@
 ﻿using ChordHub.Api.Shared.Models;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChordHub.Api.Shared.Extensions;
